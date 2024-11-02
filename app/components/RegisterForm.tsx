@@ -61,9 +61,9 @@ export default function RegisterForm() {
         <div className="h-screen grid place-items-center">
             <div className="shadow-lg p-12 rounded-lg border-t-4 bg-white">
 
-                <h1 className="text-xl font-bold mb-8">Create Your Account</h1>
+                <h1 className="text-xl font-bold mb-8 text-black">Create Your Account</h1>
 
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                     <input onChange={e => setName(e.target.value)} type="text" placeholder="Full Name" />
                     <input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
                     <input onChange={e => setPassword(e.target.value)} type="text" placeholder="Password" />
@@ -74,7 +74,7 @@ export default function RegisterForm() {
                     <div className="text-sm text-red-800 w-fit mt-2 font-bold">
                         {error}</div>
                     )}
-                    <Link href={"/"} className="text-sm text-right">Already have an account? <span className="underline">Login</span>
+                    <Link href={"/"} className="text-sm text-right text-black">Already have an account? <span className="underline">Login</span>
                     </Link>
                 </form>
             </div>
