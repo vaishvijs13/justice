@@ -59,14 +59,14 @@ export default function RegisterForm() {
 
     return (
         <div className="h-screen grid place-items-center">
-            <div className="shadow-lg p-12 rounded-lg border-t-4 bg-white">
+            <div className="shadow-lg p-12 rounded-lg border-t-4 bg-white w-1/4">
 
                 <h1 className="text-xl font-bold mb-8 text-black">Create Your Account</h1>
 
-                <form onSubmit={handleSubmit} className="flex flex-col gap-8">
-                    <input onChange={e => setName(e.target.value)} type="text" placeholder="Full Name" />
-                    <input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
-                    <input onChange={e => setPassword(e.target.value)} type="text" placeholder="Password" />
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                    <input onChange={e => setName(e.target.value)} type="text" placeholder="Full Name" className="text-black text-sm placeholder-gray-400 border border-gray-300 px-4 py-2 focus:outline-none"/>
+                    <input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" className="text-black text-sm placeholder-gray-400 border border-gray-300 px-4 py-2 focus:outline-none"/>
+                    <input onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" className="text-black text-sm placeholder-gray-400 border border-gray-300 px-4 py-2 focus:outline-none"/>
 
                     <button className="bg-slate-800 px-6 py-2 cursor-pointer text-white">Register</button>
 
