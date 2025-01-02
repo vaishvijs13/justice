@@ -90,7 +90,7 @@ const FileUpload: React.FC = () => {
         <div>
         {searchResults.length > 0 && (
           <>
-            <h2>Top Matching Clips</h2>
+            <h2 className="text-xl font-semibold mb-4 text-slate-800">Top Matching Clips</h2>
             {searchResults.map((result, index) => (
               <div key={index}>
                 <video
