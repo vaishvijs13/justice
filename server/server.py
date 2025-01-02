@@ -11,7 +11,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route('/')
 def home():
-    return jsonify({'message': 'Welcome to the Flask API!'}), 200
+    return jsonify({'message': 'not relevant route'}), 200
 
 # transcribe and index the video
 @app.route('/process', methods=['POST'])
