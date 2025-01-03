@@ -6,17 +6,14 @@ import User from "../models/user";
 import FileUpload from "../components/UploadFile";
 import PreviousSessions from "../components/PreviousSessions";
 
+interface Session {
+    id: number;
+    date: string;
+    file: string;
+}
+
 export default function Landing() {
     const { data: session } = useSession();
-    const sessions = [
-        { id: 1, date: "2024-06-01", file: "report1.pdf" },
-        { id: 2, date: "2024-06-15", file: "report2.pdf" },
-        { id: 3, date: "2024-06-20", file: "summary.docx" },
-      ];
-
-    /*
-
-    */
 
     return (
         <section className="bg-slate-300 min-h-screen">
