@@ -1,4 +1,4 @@
-# JUSTICE: Semantic Search Tool for Legal Professionals ⚖️ 
+# ⚖️ justice: Semantic Search Tool for Legal Professionals ⚖️ 
 
 ## Overview
 Justice is an AI-powered semantic search application designed to streamline information retrieval for legal professionals. Leveraging Pinecone’s vector-based search technology, it enables users to query deposition videos and legal documents with unmatched efficiency and precision. 
